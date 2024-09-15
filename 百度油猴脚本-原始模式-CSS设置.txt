@@ -1,114 +1,51 @@
-/**计数器的颜色样式*/
-div .AC-CounterT{
-  background: #FD9999;
+body:before {
+    opacity: 0.85;
+    background-size:cover;
 }
-/**百度样式区域**/
-body[baidu] {
-  position: relative;
-  min-width: 580px;
-
-  &:before{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    content: '';
-    background-image: url('https://s1.ax1x.com/2022/05/14/O6PSyD.jpg');
-    background-size: 100% 100%;
-    opacity: 0.8; /*背景图透明度=0.8，最大1*/
-	z-index: -1;
-    min-width:700px;
-  }
-  
-  /*****窗口背景的透明虚化效果*****/
-  body>#wrapper,body>.wrap,body>#main,body #appbar,body #hdtbSum{
-    background: rgba(225,225,225,0.2);
-  }
-
-  /**隐藏首页的大图标-修复可能导致外援样式异常**/
-  #s_lg_img_new{
+body{
+    min-width:1px !important;
+    max-width:100% !important;
+}
+#head{
+    min-width:1px !important;
+    max-width:100% !important;
+}
+#result_logo{
     display:none !important;
-  }
-  
-  #content_left{
-	width: 100% !important;
-  }
-  
-  #content_left>.c-container{
-    border-radius: 5px;
-    background-color: rgba(255,255,255, 0.6) !important; /*百度搜索块体的颜色；透明度=0.1，最大1*/
-    padding: 10px;
-    border-radius: 12px;
-	
-    width: 90%;
-    min-width: 500px;
-    max-width: 1200px;
-    margin: 10px auto;
-    
-    h3{
-      background-color: rgba(248,248,248, 0.6) !important; /*百度搜索块体 - 标题的颜色；透明度=0.1，最大1*/
-      padding: 5px;
-      border-radius: 8px 8px 4px 4px;
-    }
-  }
-  
-  #head{
-    backdrop-filter: blur(2px);
-    background: 0 0;
-	min-width: 0px;
-  }
-  #head .s_form {
-    width: max-content;
-    margin: 0 auto;
-  }
-  #head #result_logo{
-	display: none;
-  }
-  #head #u{
+}
+#form{
+    display:flex;
+}
+#u{
     z-index: 1;
-  }
-  .options_2Vntk{
-    margin: 0 auto;
-  }
-  
-  #container{
-    margin: 0;
+}
+.toindex{
+    display:none !important;
+}
+.s-top-username{
+    display:none !important;
+}
+#s_tab{
+    margin-left:0px !important;
+    padding-top: 80px !important;
+}
+#content_left{
+    width: 70% !important;
+    min-width:400px !important;
+    max-width:100% !important;
+    transform: translateX(0) !important;
+    overflow:hidden;
+}
+#content_left>div{
+    max-width: 100% !important;
+    min-width: 1px !important;
+}
+#content_right{
+    display:none;
+}
+.result-molecule{
+    min-width:400px !important;
+}
+.options_2Vntk{
     width: 100%;
-  }
-  #s_tab{
-      padding: 58px 0px 0px 0px;
-	  text-align: center;
-	  background: #ffffff80;
-  }
-  
-  .page-inner_2jZi2{
-    padding: 14px 0 14px 0px;
-    margin: 0 auto;
-    width: max-content;
-  }
-  
-  .c-border{
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    -o-box-shadow: none !important;
-  }
-  .sp-separator{
-    width: 97% !important;
-  }
-  .new-pmd .c-span9 {
-    width: 75%;
-  }
-  .c_font_2AD7M {
-    color: #d5d5d5 !important;
-  }
-  
-  #con-at{
-    padding-left: 0;
-  }
-  #con-at .venture__3pjR {
-    width: fit-content;
-    margin: 0 auto;
-  }
 }
