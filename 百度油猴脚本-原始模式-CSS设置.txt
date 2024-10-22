@@ -29,9 +29,9 @@ body{
     margin-left:0px !important;
     padding-top: 80px !important;
 }
-#content_left{
+#wrapper #content_left{
     width: 70% !important;
-    min-width:400px !important;
+    min-width:500px !important;
     max-width:100% !important;
     transform: translateX(0) !important;
     overflow:hidden;
